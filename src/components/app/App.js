@@ -44,11 +44,13 @@ function App() {
     <div className="wrapper">
       <Router>
         {header}
+        <main className="main">
         <Route path='/' render={() => <MainPage language={language} />} exact />
         <Route path='/authors' render={() => <AuthorsListPage language={language} />} exact />
         <Route path='/authors/:id' render={() => personPage} exact />
         <Route path='/styleguide' render={() => styleGuide} exact />
         <Route path='/developers' render={() => developersPage} exact />
+        </main>
         {footer}
       </Router>
     </div>
