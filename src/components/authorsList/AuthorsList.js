@@ -7,10 +7,11 @@ import './AuthorsList.scss';
 const AuthorsList = ({ language }) => {
 
   return (
-    <ul>
+    <ul className="architects-list__container">
       {Architects.map((person) => {
         const url = `/authors/${person.path}`;
         return <li
+          className="architects-list__item"
           key={person.id}
         ><Link to={url} >{language === 'RU'
           ? person.nameRU
