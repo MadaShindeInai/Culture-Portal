@@ -15,8 +15,23 @@ const StyleGuide = ({ language }) => {
   return (
     <div>
       <span>{buttonColorText}</span>
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
+
       <span>{buttonColorText}</span>
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
+
       <span>{buttonColorText}</span>
+      
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
+      <span>{buttonColorText}</span>
+
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
+      <span>{buttonColorText}</span>
+
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
+      <span>{buttonColorText}</span>
+
+      <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
     </div>
   )
 }

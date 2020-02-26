@@ -1,0 +1,28 @@
+p.decor {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  p.decor:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    left: 100px;
+    width: 40px;
+    height: 1px;
+    margin: 0 auto;
+    background: #1098ad;
+  }
+  p.decor:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    left: -100px;
+    width: 40px;
+    height: 1px;
+    margin: 0 auto;
+    background: #1098ad;
+  }
