@@ -7,6 +7,7 @@ const PersonPage = ({ language, id }) => {
   const currentAuthor = Architects.filter((person) => person.path === id);
   const currentAuthorObj = currentAuthor[0];
 
+  console.log("TCL: PersonPage -> currentAuthorObj", currentAuthorObj);
   let name;
   let architectPhoto;
   let date;
