@@ -1,0 +1,18 @@
+.app-description {
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../assets/images/main-page-bgi.jpg);
+  background-size: cover;
+}
+.app-description__text {
+  width: 45%;
+  margin: 4rem 5% 5rem 50%;
+  font: bold 2rem "FuturaMediumC";
+  text-align: right;
+  @media (max-width: 1050px) {
+    width: 100%;
+    margin: 4rem 5% 5rem 5%;
+    font: bold 1.5rem "FuturaMediumC";
+    text-align: center;
+  }
+}
