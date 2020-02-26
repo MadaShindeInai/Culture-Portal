@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 
 const Header = ({ language, setLanguage }) => {
-
+  let appTitleText;
   let enButton;
   let ruButton;
   let beButton;
@@ -14,6 +14,7 @@ const Header = ({ language, setLanguage }) => {
 
 
   if (language === 'RU') {
+    appTitleText = 'Архитекторы Беларуси';
     enButton = 'АНГ';
     ruButton = 'РУС';
     beButton = 'БЕЛ';
@@ -22,6 +23,7 @@ const Header = ({ language, setLanguage }) => {
     slyleGuideLink = 'Стайлгайд';
     ourTeamLink = 'Наша команда';
   } else if (language === 'EN') {
+    appTitleText = 'Architects of Belarus';
     enButton = 'ENG';
     ruButton = 'RUS';
     beButton = 'BEL';
@@ -30,6 +32,7 @@ const Header = ({ language, setLanguage }) => {
     slyleGuideLink = 'Styleguide';
     ourTeamLink = 'Our Team';
   } else if (language === 'BE') {
+    appTitleText = 'Архітэктары Беларусі';
     enButton = 'АНГ';
     ruButton = 'РУС';
     beButton = 'БЕЛ';
@@ -42,7 +45,7 @@ const Header = ({ language, setLanguage }) => {
   return (
     <header className="header">
       <div className="header__container">
-        <h1 className="header__logo">Architects of Belarus</h1>
+        <h1 className="header__logo">{appTitleText}</h1>
         <div className="header__language">
 
           <button type="button"
