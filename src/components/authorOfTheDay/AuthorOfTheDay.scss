@@ -1,0 +1,93 @@
+.author-of-the-day {
+  margin: 25px 0;
+  border-top: 1px solid #1098ad;;
+}
+.author-of-the-day__wrapper {
+  margin: 25px 0;
+  padding: 3rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/images/authour-of-the-day-bg.jpg);
+  background-size: cover;
+}
+.author-of-the-day__content {
+  display: flex;
+  align-items: center;
+}
+.author-of-the-day__title {
+  margin-bottom: 2rem;
+  font: bold 3rem "FuturaMediumC";
+  text-align: center;
+}
+.author-of-the-day__description {
+  margin-left: 2rem;
+  font: bold 2rem "FuturaMediumC";
+}
+p.decor {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+p.decor:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: 100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #1098ad;
+}
+p.decor:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: -100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #1098ad;
+}
+p.decor span.deg1 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: -30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+p.decor span.deg2 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+p.decor span.deg3 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
