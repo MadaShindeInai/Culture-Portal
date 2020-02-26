@@ -4,36 +4,36 @@ import './Header.scss';
 
 const HeaderRU = ({ setLanguage }) => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Домой</Link>
+    <header className="header">
+      <div className="header__container">
+        <h1 className="header__logo">Architects of Belarus</h1>
+        <div className="header__language">
+      
+      <button type="button"
+              onClick={() => setLanguage('EN')}>EN</button>
+      <button type="button"
+              onClick={() => setLanguage('RU')}>RU</button>
+      <button type="button"
+              onClick={() => setLanguage('BE')}>BY</button>
+        </div>
+      </div>
+
+        <nav>
+        <ul className="header__nav">
+          <li className="header__item">
+            <Link to="/">Главная</Link>
           </li>
-          <li>
+          <li className="header__item">
             <Link to='/authors'>Архитекторы</Link>
           </li>
-          <li>
+          <li className="header__item">
             <Link to='/styleguide'>Стайлгайд</Link>
           </li>
-          <li>
-            <Link to='/developers'>Разработчики</Link>
-          </li>
-          <li>
-            <button
-              type="button"
-              onClick={() => setLanguage('BE')}
-            >БЕЛ</button>
-          </li>
-          <li>
-            <button
-              type="button"
-              onClick={() => setLanguage('EN')}
-            >АНГЛ</button>
+          <li className="header__item">
+            <Link to='/developers'>Наша команда</Link>
           </li>
         </ul>
       </nav>
-
     </header>
   )
 

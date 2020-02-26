@@ -3,9 +3,7 @@ import './Footer.scss';
 
 const FooterRU = () => {
   return (
-    <footer>
-      Это футер
-    </footer>
+    <footer className="footer">© 2020 Rolling Scopes School</footer>
   )
 
 }
