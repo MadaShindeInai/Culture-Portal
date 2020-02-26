@@ -1,5 +1,4 @@
-import AuthorsListRU from './AuthorsListRU'
-import AuthorsListEN from './AuthorsListEN'
-import AuthorsListBE from './AuthorsListBE'
+import AuthorsList from './AuthorsList'
 
-export { AuthorsListRU, AuthorsListEN, AuthorsListBE };
+
+export default AuthorsList;

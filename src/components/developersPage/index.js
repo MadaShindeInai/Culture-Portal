@@ -1,5 +1,3 @@
-import DevelopersPageBE from './DevelopersPageBE';
-import DevelopersPageRU from './DevelopersPageRU';
-import DevelopersPageEN from './DevelopersPageEN';
+import DevelopersPage from './DevelopersPage';
 
-export { DevelopersPageBE, DevelopersPageRU, DevelopersPageEN };
+export default DevelopersPage;

@@ -1,5 +1,4 @@
-import FooterRU from './FooterRU'
-import FooterBE from './FooterBE'
-import FooterEN from './FooterEN'
+import Footer from './Footer'
 
-export { FooterRU, FooterBE, FooterEN };
+
+export default Footer;

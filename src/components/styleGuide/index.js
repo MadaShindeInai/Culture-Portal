@@ -1,5 +1,3 @@
-import StyleGuideRU from './StyleGuideRU';
-import StyleGuideEN from './StyleGuideEN';
-import StyleGuideBE from './StyleGuideBE';
+import StyleGuide from './StyleGuide';
 
-export { StyleGuideRU, StyleGuideEN, StyleGuideBE };
+export default StyleGuide;

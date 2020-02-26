@@ -1,5 +1,3 @@
-import HeaderEN from './HeaderEN'
-import HeaderRU from './HeaderRU'
-import HeaderBE from './HeaderBE'
+import Header from './Header'
 
-export { HeaderEN, HeaderRU, HeaderBE };
+export default Header;
