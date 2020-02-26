@@ -11,6 +11,7 @@
 .author-of-the-day__content {
   display: flex;
   align-items: center;
+  margin-top: 4rem;
 }
 .author-of-the-day__title {
   margin-bottom: 2rem;
@@ -20,6 +21,18 @@
 .author-of-the-day__description {
   margin-left: 2rem;
   font: bold 2rem "FuturaMediumC";
+}
+.author-of-the-day__biography {
+  margin-bottom: 2rem;
+}
+
+.author-of-the-day__link {
+  font-style: italic;
+  text-align: right;
+  color: #1098ad;
+  &:hover {
+    color: darken(#1098ad, 15%);
+  }
 }
 p.decor {
   position: relative;
@@ -90,4 +103,23 @@ p.decor span.deg3 {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+@media (max-width: 800px) {
+  .author-of-the-day__title {
+    font: bold 2rem "FuturaMediumC";
+  }
+  .author-of-the-day__description {
+    font: bold 1.5rem "FuturaMediumC";
+  }
+}
+@media (max-width: 650px) {
+  .author-of-the-day__content {
+    flex-direction: column;
+  }
+  .author-of-the-day__description {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
 }
