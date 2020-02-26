@@ -1,4 +1,4 @@
-const architects = [
+const Architects = [
   {
     id: "1",
     path: "ananich",
@@ -996,3 +996,5 @@ const architects = [
     ]
   }
 ];
+
+export default Architects;
