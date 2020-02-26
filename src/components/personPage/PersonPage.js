@@ -1,8 +1,12 @@
 import React from 'react';
+import Architects from '../../utils/architectsData';
 
 import './PersonPage.scss';
 
-const PersonPage = ({ language }) => {
+const PersonPage = ({ language, id }) => {
+  const currentAuthor = Architects.filter((person) => person.path === id);
+  console.log(currentAuthor);
+
   let name;
   let authorPhoto;
   let YearsOflife;

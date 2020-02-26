@@ -23,7 +23,10 @@ function App() {
         <main className="main">
           <Route path='/' render={() => <MainPage language={language} />} exact />
           <Route path='/authors' render={() => <AuthorsListPage language={language} />} exact />
-          <Route path='/authors/:id' render={() => <PersonPage language={language} />} exact />
+          <Route path='/authors/:id' render={({ match }) => {
+            const { id } = match.params;
+            return <PersonPage language={language} id={id} />
+          }} exact />
           <Route path='/styleguide' render={() => <StyleGuide language={language} />} exact />
           <Route path='/developers' render={() => <DevelopersPage language={language} />} exact />
         </main>
