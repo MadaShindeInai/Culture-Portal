@@ -26,14 +26,32 @@
   cursor: pointer;
   transition: 0.2s;
 }
+
 .btn:hover {
   border: 1px solid #5bb8c7;
   background-color: white;
   color: #5bb8c7;
   cursor: pointer;
 }
+
 a,
 li {
   font-family: "FuturaMediumC";
  color: #1098ad;
+}
+
+.dropdown-item {
+  background-color: white;
+  color: #5bb8c7;
+  text-align: center;
+}
+.dropdown-item:hover {
+  background-color: #5bb8c7;
+  color: white;
+}
+
+.show>.btn-success.dropdown-toggle:focus {
+box-shadow: none;
+background-color: #237a88;
+color: white;
 }
