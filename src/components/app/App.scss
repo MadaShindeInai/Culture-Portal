@@ -7,7 +7,7 @@
   max-width: 1280px;
   min-height: 937px;
   margin: 0 auto;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #212529;
 }
 
@@ -36,8 +36,8 @@
 
 a,
 li {
-  font-family: "FuturaMediumC";
- color: #1098ad;
+  font-family: 'FuturaMediumC';
+  color: #1098ad;
 }
 
 .dropdown-item {
@@ -50,8 +50,14 @@ li {
   color: white;
 }
 
-.show>.btn-success.dropdown-toggle:focus {
-box-shadow: none;
-background-color: #237a88;
-color: white;
+.btn-success.focus,
+.btn-success:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: none;
+  background-color: #237a88;
+  color: white;
+}
+
+li {
+  list-style-type: none;
 }
