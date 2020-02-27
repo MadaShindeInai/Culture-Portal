@@ -359,7 +359,7 @@ const Architects = [
     nameBY: "Левін Леанід Мендзелевіч",
     date: "25.07.1936 — 01.04.2014",
     img:
-      "https://lh3.googleusercontent.com/proxy/vVUCW4v-rwQn8qLtLkZ1AZi0AZDxaNYJCqAKtb62JJbBMUCVFhco3ExdPXYG14VmOKDgVDgVR5BdzFuxRYnNl_0rU8GMvXwVVWeC",
+      "http://aviv.by/wp-content/uploads/2016/06/levin.jpg",
     videoId: "https://www.youtube.com/watch?v=WtrKQaUkbdE",
     birthPlaceRU: "Минск , Беларусь (СССР)",
     birthPlaceEN: "Minsk, Belarus (USSR)",

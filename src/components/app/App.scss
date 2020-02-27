@@ -7,7 +7,7 @@
   max-width: 1280px;
   min-height: 937px;
   margin: 0 auto;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #212529;
 }
 
@@ -21,9 +21,43 @@
 .btn {
   width: 100%;
   margin-bottom: 40px;
-  padding: 10px;
-  background-color: #343a40;
-  border: none;
-  outline: 1px solid #495057;
+  background-color: #5bb8c7;
+  color: white;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border: 1px solid #5bb8c7;
+  background-color: white;
+  color: #5bb8c7;
+  cursor: pointer;
+}
+
+a,
+li {
+  font-family: 'FuturaMediumC';
+  color: #1098ad;
+}
+
+.dropdown-item {
+  background-color: white;
+  color: #5bb8c7;
+  text-align: center;
+}
+.dropdown-item:hover {
+  background-color: #5bb8c7;
+  color: white;
+}
+
+.btn-success.focus,
+.btn-success:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: none;
+  background-color: #237a88;
+  color: white;
+}
+
+li {
+  list-style-type: none;
 }

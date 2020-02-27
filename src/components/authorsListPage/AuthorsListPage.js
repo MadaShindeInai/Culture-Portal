@@ -26,17 +26,16 @@ const AuthorsListPage = ({ language }) => {
 
 
   return (
-    <>
+    <div className="main__authors">
       <SearchPanel
         language={language}
-        // setlinksAuthors={setSectedArchitects}
         inputValue={inputValue}
         setInputValue={setInputValue}
       />
       <AuthorsList language={language}
         architects={visibleItems}
       />
-    </>
+    </div>
   );
 };
 
