@@ -50,22 +50,17 @@ const Header = ({ language, setLanguage }) => {
     <header className="header">
       <div className="header__container">
         <h1 className="header__logo">{appTitleText}</h1>
-        <div className="header__language">
+        <Dropdown>
+          <Dropdown.Toggle variant="info" id="dropdown-basic">
+            {changeLanguage}
+          </Dropdown.Toggle>
 
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-             {changeLanguage}
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1" onClick={() => setLanguage('RU')}>{ruButton}</Dropdown.Item>
-              <Dropdown.Item href="#/action-2" onClick={() => setLanguage('EN')}>{enButton}</Dropdown.Item>
-              <Dropdown.Item href="#/action-3" onClick={() => setLanguage('BE')}>{beButton}</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-
-
-        </div>
+          <Dropdown.Menu>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('RU')}>{ruButton}</Dropdown.Item>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('EN')}>{enButton}</Dropdown.Item>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('BE')}>{beButton}</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
 
       <nav>
