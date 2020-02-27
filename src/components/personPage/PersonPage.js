@@ -48,7 +48,13 @@ const PersonPage = ({ language, id }) => {
           </Timeline>
         </div>
       </div>
-      <div className="info-container__item">Проекты</div>
+      <div className="info-container__item info-container__info-table">
+        <Table
+          dataSource={projects}
+          columns={projectColumns}
+          pagination={false}
+        />
+      </div>
       <div className="info-container__item">Галерея или Слайдер</div>
       <div className="info-container__item">Видео</div>
       <div className="info-container__item">Карта</div>
