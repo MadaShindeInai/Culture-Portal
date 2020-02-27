@@ -1,35 +1,8 @@
 import React from 'react';
 import './SearchPanel.scss';
-import Architects from '../../utils/architectsData';
 
-const selectAuthors = (param, setlinksAuthors, language) => e => {
-  let sortedArrayAuthors = Architects;
+const SearchPanel = ({ language, setInputValue, inputValue }) => {
 
-
-  let searchKey = `nameRU`;
-  if (language === 'BE') {
-    searchKey = `nameBY`;
-  } else {
-    searchKey = `name${language}`
-  }
-
-  sortedArrayAuthors = Architects.filter(item => {
-    return item[searchKey].indexOf(e.target.value) > -1;
-  });
-
-  if (sortedArrayAuthors.length > 0) {
-    setlinksAuthors(sortedArrayAuthors);
-  } else {
-    setlinksAuthors([]);
-  }
-};
-
-const clearInput = () => {
-  console.log('Очистка')
-}
-
-
-const SearchPanel = ({ language, setlinksAuthors }) => {
   let placeholderText;
   let buttonText;
 
@@ -45,15 +18,16 @@ const SearchPanel = ({ language, setlinksAuthors }) => {
   }
   return (
     <div>
-      <form onSubmit={clearInput}>
       <input
         type="text"
         placeholder={placeholderText}
         name="searchInput"
-        onChange={selectAuthors(this, setlinksAuthors, language)}
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
       />
-      <button type="submit">{buttonText}</button>
-      </form>
+      <button type="button"
+        onClick={() => setInputValue('')}
+      >{buttonText}</button>
     </div>
   );
 };
