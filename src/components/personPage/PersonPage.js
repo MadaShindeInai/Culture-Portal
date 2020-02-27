@@ -1,5 +1,6 @@
 import React from 'react';
 import { Timeline, Table, Carousel } from 'antd';
+import { Map, Marker, TileLayer } from 'react-leaflet';
 import Architects from '../../utils/architectsData';
 
 import './PersonPage.scss';
@@ -94,7 +95,18 @@ const PersonPage = ({ language, id }) => {
         </div>
       )}
 
-      <div className="info-container__item">Карта</div>
+      <div className="info-container__item-map">
+        <Map
+          center={currentAuthor.projects[0].position}
+          zoom={12}
+          easeLinearity={0.35}
+        >
+          <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+          {currentAuthor.projects.map(item => (
+            <Marker key={item.position} position={item.position} />
+          ))}
+        </Map>
+      </div>
     </div>
   );
 };
