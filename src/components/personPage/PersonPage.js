@@ -1,4 +1,5 @@
 import React from 'react';
+import { Timeline, Table, Carousel } from 'antd';
 import Architects from '../../utils/architectsData';
 
 import './PersonPage.scss';
@@ -36,7 +37,17 @@ const PersonPage = ({ language, id }) => {
             </p>
           </div>
         </div>
-      <div className="info-container__item">Timeline</div>
+        <div className="info-container__item info-container__info-timeline">
+          <Timeline>
+            {currentAuthor.timelineData.map(item => (
+              <Timeline.Item key={item.date}>
+                <h4>{item.date}</h4>
+                <p>{item[`text${lang}`]}</p>
+              </Timeline.Item>
+            ))}
+          </Timeline>
+        </div>
+      </div>
       <div className="info-container__item">Проекты</div>
       <div className="info-container__item">Галерея или Слайдер</div>
       <div className="info-container__item">Видео</div>
