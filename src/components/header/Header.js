@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Header = ({ language, setLanguage }) => {
   let appTitleText;
@@ -11,7 +12,7 @@ const Header = ({ language, setLanguage }) => {
   let authorsLink;
   let slyleGuideLink;
   let ourTeamLink;
-
+  let changeLanguage;
 
   if (language === 'RU') {
     appTitleText = 'Архитекторы Беларуси';
@@ -22,6 +23,7 @@ const Header = ({ language, setLanguage }) => {
     authorsLink = 'Архитекторы';
     slyleGuideLink = 'Стайлгайд';
     ourTeamLink = 'Наша команда';
+    changeLanguage = 'Сменить язык';
   } else if (language === 'EN') {
     appTitleText = 'Architects of Belarus';
     enButton = 'ENG';
@@ -31,6 +33,7 @@ const Header = ({ language, setLanguage }) => {
     authorsLink = 'Architects';
     slyleGuideLink = 'Styleguide';
     ourTeamLink = 'Our Team';
+    changeLanguage = 'Change language';
   } else if (language === 'BE') {
     appTitleText = 'Архітэктары Беларусі';
     enButton = 'АНГ';
@@ -40,21 +43,24 @@ const Header = ({ language, setLanguage }) => {
     authorsLink = 'Архітэктары';
     slyleGuideLink = 'Стайлгайд';
     ourTeamLink = 'Наша каманда';
+    changeLanguage = 'Змяніць мову';
   }
 
   return (
     <header className="header">
       <div className="header__container">
         <h1 className="header__logo">{appTitleText}</h1>
-        <div className="header__language">
+        <Dropdown>
+          <Dropdown.Toggle variant="info" id="dropdown-basic">
+            {changeLanguage}
+          </Dropdown.Toggle>
 
-          <button type="button"
-            onClick={() => setLanguage('RU')}>{ruButton}</button>
-          <button type="button"
-            onClick={() => setLanguage('EN')}>{enButton}</button>
-          <button type="button"
-            onClick={() => setLanguage('BE')}>{beButton}</button>
-        </div>
+          <Dropdown.Menu>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('RU')}>{ruButton}</Dropdown.Item>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('EN')}>{enButton}</Dropdown.Item>
+            <Dropdown.Item className="header__dropdown-btn" as="button" onClick={() => setLanguage('BE')}>{beButton}</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
 
       <nav>

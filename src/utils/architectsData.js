@@ -371,12 +371,11 @@ const Architects = [
     nameEN: 'Levin Leonid Mendelevich',
     nameBY: 'Левін Леанід Мендзелевіч',
     date: '25.07.1936 — 01.04.2014',
-    img:
-      'https://lh3.googleusercontent.com/proxy/vVUCW4v-rwQn8qLtLkZ1AZi0AZDxaNYJCqAKtb62JJbBMUCVFhco3ExdPXYG14VmOKDgVDgVR5BdzFuxRYnNl_0rU8GMvXwVVWeC',
-    videoId: 'https://www.youtube.com/embed/WtrKQaUkbdE',
-    birthPlaceRU: 'Минск , Беларусь (СССР)',
-    birthPlaceEN: 'Minsk, Belarus (USSR)',
-    birthPlaceBY: 'Мінск, Беларусь (СССР)',
+    img: "http://aviv.by/wp-content/uploads/2016/06/levin.jpg",
+    videoId: "https://www.youtube.com/watch?v=WtrKQaUkbdE",
+    birthPlaceRU: "Минск , Беларусь (СССР)",
+    birthPlaceEN: "Minsk, Belarus (USSR)",
+    birthPlaceBY: "Мінск, Беларусь (СССР)",
     descriptionRU:
       'Заслуженный архитектор Республики Беларусь, Лауреат Ленинской премии и премии Ленинского комсомола, Лауреат премии Волгоградского Комсомола, дважды лауреат Государственной премии Республики Беларусь, лауреат многих престижных конкурсов и смотров архитектурных работ, Академик Международной и Белорусской Академий архитектуры, Председатель Союза белорусских еврейских общественных объединений и общин с 1991 года.Один из авторов мемориального комплекса «Хатынь», за который (в составе авторского коллектива) был удостоен Ленинской премии.',
     descriptionEN:

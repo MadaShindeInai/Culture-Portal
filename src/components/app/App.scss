@@ -18,12 +18,21 @@
   text-align: center;
 }
 
-.btn {
-  width: 100%;
-  margin-bottom: 40px;
-  padding: 10px;
-  background-color: #343a40;
-  border: none;
-  outline: 1px solid #495057;
-  cursor: pointer;
+a,
+li {
+  font-family: "FuturaMediumC";
+  color: #1098ad;
+}
+li {
+  list-style-type: none;
+}
+.dropdown-item {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #5bb8c7;
+  background-color: white;
+  &:hover {
+    color: white;
+    background-color: #5bb8c7;
+  }
 }

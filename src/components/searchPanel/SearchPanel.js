@@ -1,8 +1,8 @@
 import React from 'react';
-
 import './SearchPanel.scss';
 
-const SearchPanel = ({ language }) => {
+const SearchPanel = ({ language, setInputValue, inputValue }) => {
+
   let placeholderText;
   let buttonText;
 
@@ -17,12 +17,25 @@ const SearchPanel = ({ language }) => {
     buttonText = 'Ачысціць';
   }
   return (
-    <div>
-      <input type="text"
-        placeholder={placeholderText} />
-      <button type='submit'>{buttonText}</button>
+    <div className="main__search input-group mb-3">
+      <input
+        type="text"
+        placeholder={placeholderText}
+        className="main__search-input form-control"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+        <div className="input-group-append">
+      <button type="button"
+      className="btn main__search-clear"
+        onClick={() => setInputValue('')}
+      >{buttonText}</button>
+      </div>
+
     </div>
-  )
-}
+
+    
+  );
+};
 
 export default SearchPanel;
