@@ -81,7 +81,19 @@ const PersonPage = ({ language, id }) => {
           ))}
         </Carousel>
       </div>
-      <div className="info-container__item">Видео</div>
+      {currentAuthor.videoId && (
+        <div className="info-container__item">
+          <iframe
+            width="560"
+            height="315"
+            src={currentAuthor.videoId}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
+
       <div className="info-container__item">Карта</div>
     </div>
   );
