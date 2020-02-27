@@ -14,23 +14,28 @@ const PersonPage = ({ language, id }) => {
   };
   return (
     <div className="info-container">
-      <div className="info-container__item">
-        <h2 className="info-container__name">{name}</h2>
-      </div>
-      <div className="info-container__item">
-        <img
-          className="info-container__image"
-          src={architectPhoto}
-          alt="photo"
-          width="250"
-        />
-      </div>
-      <div className="info-container__item">
-        <h4 className="info-container__date">{date}</h4>
-      </div>
-      <div className="info-container__item">
-        <p className="info-container__description">{description}</p>
-      </div>
+      <div className="info-container__wrapper">
+        <div className="info-container__about">
+          <h2 className="info-container__name">
+            {currentAuthor[`name${lang}`]}
+          </h2>
+          <div className="info-container__item">
+            <img
+              className="info-container__image"
+              src={currentAuthor.img}
+              alt="architector"
+              width="250"
+            />
+          </div>
+          <div className="info-container__item">
+            <h4 className="info-container__date">{currentAuthor.date}</h4>
+          </div>
+          <div className="info-container__item">
+            <p className="info-container__description">
+              {currentAuthor[`description${lang}`]}
+            </p>
+          </div>
+        </div>
       <div className="info-container__item">Timeline</div>
       <div className="info-container__item">Проекты</div>
       <div className="info-container__item">Галерея или Слайдер</div>
