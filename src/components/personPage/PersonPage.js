@@ -59,7 +59,7 @@ const PersonPage = ({ language, id }) => {
         <div className="info-container__item info-container__info-timeline">
           <Timeline>
             {currentAuthor.timelineData.map(item => (
-              <Timeline.Item key={item.date}>
+              <Timeline.Item key={item.textBY}>
                 <h4>{item.date}</h4>
                 <p>{item[`text${lang}`]}</p>
               </Timeline.Item>
