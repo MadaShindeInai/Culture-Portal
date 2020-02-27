@@ -371,11 +371,11 @@ const Architects = [
     nameEN: 'Levin Leonid Mendelevich',
     nameBY: 'Левін Леанід Мендзелевіч',
     date: '25.07.1936 — 01.04.2014',
-    img: "http://aviv.by/wp-content/uploads/2016/06/levin.jpg",
-    videoId: "https://www.youtube.com/watch?v=WtrKQaUkbdE",
-    birthPlaceRU: "Минск , Беларусь (СССР)",
-    birthPlaceEN: "Minsk, Belarus (USSR)",
-    birthPlaceBY: "Мінск, Беларусь (СССР)",
+    img: 'http://aviv.by/wp-content/uploads/2016/06/levin.jpg',
+    videoId: 'https://www.youtube.com/embed/WtrKQaUkbdE',
+    birthPlaceRU: 'Минск , Беларусь (СССР)',
+    birthPlaceEN: 'Minsk, Belarus (USSR)',
+    birthPlaceBY: 'Мінск, Беларусь (СССР)',
     descriptionRU:
       'Заслуженный архитектор Республики Беларусь, Лауреат Ленинской премии и премии Ленинского комсомола, Лауреат премии Волгоградского Комсомола, дважды лауреат Государственной премии Республики Беларусь, лауреат многих престижных конкурсов и смотров архитектурных работ, Академик Международной и Белорусской Академий архитектуры, Председатель Союза белорусских еврейских общественных объединений и общин с 1991 года.Один из авторов мемориального комплекса «Хатынь», за который (в составе авторского коллектива) был удостоен Ленинской премии.',
     descriptionEN:
@@ -582,7 +582,7 @@ const Architects = [
     nameBY: 'Шабунеўскага Станіслаў Данілавіч',
     date: '02.12.1868 — 1937',
     img:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/%D0%A1%D1%82%D0%B0%D0%BD%D1%96%D1%81%D0%BB%D0%B0%D1%9E_%D0%A8%D0%B0%D0%B1%D1%83%D0%BD%D0%B5%D1%9E%D1%81%D0%BA%D1%96.jpg/252px-%D0%A1%D1%82%D0%B0%D0%BD%D1%96%D1%81%D0%BB%D0%B0%D1%9E_%D0%A8%D0%B0%D0%B1%D1%83%D0%BD%D0%B5%D1%9E%D1%81%D0%BA%D1%96.jpg',
+      'https://www.sb.by/upload/iblock/f4d/f4dc28cacdf04dfd758d02c7782b735d.jpg',
     videoId: 'https://www.youtube.com/embed/a43rFmrY78c',
     birthPlaceRU:
       'Скородное, Ельский район Гомельской области, Беларусь (СССР)',
