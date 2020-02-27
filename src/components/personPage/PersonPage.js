@@ -13,6 +13,23 @@ const PersonPage = ({ language, id }) => {
     date: { BY: 'Дата', RU: 'Дата', EN: 'Date' },
     text: { BY: 'Апiсанне', RU: 'Описание', EN: 'Description' }
   };
+  const projects = currentAuthor.projects.map((item, index) => ({
+    date: item.date,
+    text: item[`text${lang}`],
+    key: index
+  }));
+  const projectColumns = [
+    {
+      title: projectTitles.date[lang],
+      dataIndex: 'date',
+      key: 'date'
+    },
+    {
+      title: projectTitles.text[lang],
+      dataIndex: 'text',
+      key: 'text'
+    }
+  ];
   return (
     <div className="info-container">
       <div className="info-container__wrapper">
@@ -55,7 +72,15 @@ const PersonPage = ({ language, id }) => {
           pagination={false}
         />
       </div>
-      <div className="info-container__item">Галерея или Слайдер</div>
+      <div className="info-container__item info-container__info-carousel">
+        <Carousel autoplay>
+          {currentAuthor.projects.map(item => (
+            <div key={item[`text${lang}`]}>
+              <img src={item.image} alt="example projects" key={item.image} />
+            </div>
+          ))}
+        </Carousel>
+      </div>
       <div className="info-container__item">Видео</div>
       <div className="info-container__item">Карта</div>
     </div>
