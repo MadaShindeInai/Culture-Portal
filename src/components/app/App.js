@@ -8,6 +8,7 @@ import DevelopersPage from '../developersPage';
 import MainPage from '../mainPage';
 import AuthorsListPage from '../authorsListPage';
 import './normalize.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts.scss';
 import './App.scss';
 
