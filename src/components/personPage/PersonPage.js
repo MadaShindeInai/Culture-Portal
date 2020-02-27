@@ -14,6 +14,7 @@ const PersonPage = ({ language, id }) => {
     date: { BY: 'Дата', RU: 'Дата', EN: 'Date' },
     text: { BY: 'Апiсанне', RU: 'Описание', EN: 'Description' }
   };
+
   const projects = currentAuthor.projects.map((item, index) => ({
     date: item.date,
     text: item[`text${lang}`],
@@ -82,6 +83,7 @@ const PersonPage = ({ language, id }) => {
           ))}
         </Carousel>
       </div>
+
       {currentAuthor.videoId && (
         <div className="info-container__item">
           <iframe
