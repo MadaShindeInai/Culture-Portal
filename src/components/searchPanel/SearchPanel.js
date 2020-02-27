@@ -17,18 +17,24 @@ const SearchPanel = ({ language, setInputValue, inputValue }) => {
     buttonText = 'Ачысціць';
   }
   return (
-    <div>
+    <div className="main__search input-group mb-3">
       <input
         type="text"
         placeholder={placeholderText}
-        name="searchInput"
+        className="main__search-input form-control"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
+        <div className="input-group-append">
       <button type="button"
+      className="btn main__search-clear"
         onClick={() => setInputValue('')}
       >{buttonText}</button>
+      </div>
+
     </div>
+
+    
   );
 };
 
