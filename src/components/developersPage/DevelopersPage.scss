@@ -27,19 +27,28 @@
   border-radius: 10px;
 }
 .developer-container__name {
+  margin: 0;
   font: bold 1.5rem "FuturaMediumC";
   color: #343a40;
 }
 .developer-container__photo {
   border-radius: 50%;
 }
+.developer-container__links {
+  display: flex;
+}
 .developer-container__link {
   font: bold 1.2rem "FuturaMediumC";
-  color: #17a2b8;
+  color: #343a40;
   &:hover {
     // font: bold 1.3rem "FuturaMediumC";
-    color: darken(#17a2b8, 10%);
+    color: #17a2b8;
     cursor: pointer;
     transition: all 300ms ease;
   }
+}
+.anticon.anticon-github,
+.anticon.anticon-file-word {
+  margin: 0 10px;
+  font-size: 2.5rem;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { GithubOutlined, FileWordOutlined } from '@ant-design/icons';
 import PhotoDaria from '../../assets/images/dariavv.jpg';
 import Deeamon from '../../assets/images/deeamon.jpg';
 import Max from '../../assets/images/max.jpg';
@@ -11,8 +12,6 @@ const DevelopersPageBE = ({ language }) => {
   let thirdDeveloperName;
   let forthDeveloperName;
   let fifthDeveloperName;
-  let linkToGithub;
-  let linkToWorklog;
   if (language === 'RU') {
     titleText = 'Наша команда';
     firstDeveloperName = 'Дарья Сидорович';
@@ -20,8 +19,6 @@ const DevelopersPageBE = ({ language }) => {
     thirdDeveloperName = 'Анастасия Носевич';
     forthDeveloperName = 'Максим Деменков';
     fifthDeveloperName = 'Марина Сугутова';
-    linkToGithub = 'Ссылка на GitHub';
-    linkToWorklog = 'Ссылка на Worklog';
   } else if (language === 'EN') {
     titleText = 'Our team';
     firstDeveloperName = 'Darya Sidarovich';
@@ -29,8 +26,6 @@ const DevelopersPageBE = ({ language }) => {
     thirdDeveloperName = 'Anastasya Nasevich';
     forthDeveloperName = 'Maxim Demenkov';
     fifthDeveloperName = 'Marina Sugutova';
-    linkToGithub = 'Link to GitHub';
-    linkToWorklog = 'Link to Worklog';
   } else if (language === 'BE') {
     titleText = 'Наша каманда';
     firstDeveloperName = 'Дар`я Сідаровіч';
@@ -38,8 +33,6 @@ const DevelopersPageBE = ({ language }) => {
     thirdDeveloperName = 'Анастасiя Насевіч';
     forthDeveloperName = 'Максiм Дземянкоў';
     fifthDeveloperName = 'Марына Сугутава';
-    linkToGithub = 'Спасылка на GitHub';
-    linkToWorklog = 'Спасылка на Worklog';
   }
   return (
     <div className="developers">
@@ -53,8 +46,10 @@ const DevelopersPageBE = ({ language }) => {
             width="190"
           />
           <p className="developer-container__name">{firstDeveloperName}</p>
-          <a className="developer-container__link" href="https://github.com/dariavv" target="_blank" rel='noreferrer noopener'>{linkToGithub}</a>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'>{linkToWorklog}</a>
+          <div className="developer-container__links">
+            <a className="developer-container__link" href="https://github.com/dariavv" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+          </div>
         </div>
         <div className="developer-container">
           <img
@@ -64,8 +59,10 @@ const DevelopersPageBE = ({ language }) => {
             width="190"
           />
           <p className="developer-container__name">{secondDeveloperName}</p>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai" target="_blank" rel='noreferrer noopener'>{linkToGithub}</a>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'>{linkToWorklog}</a>
+          <div className="developer-container__links">
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+          </div>
         </div>
         <div className="developer-container">
           <img
@@ -75,8 +72,10 @@ const DevelopersPageBE = ({ language }) => {
             width="190"
           />
           <p className="developer-container__name">{thirdDeveloperName}</p>
-          <a className="developer-container__link" href="https://github.com/Anastasya1701" target="_blank" rel='noreferrer noopener'>{linkToGithub}</a>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'>{linkToWorklog}</a>
+          <div className="developer-container__links">
+            <a className="developer-container__link" href="https://github.com/Anastasya1701" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+          </div>
         </div>
         <div className="developer-container">
           <img
@@ -86,8 +85,10 @@ const DevelopersPageBE = ({ language }) => {
             width="190"
           />
           <p className="developer-container__name">{forthDeveloperName}</p>
-          <a className="developer-container__link" href="https://github.com/MaxDeMaW" target="_blank" rel='noreferrer noopener'>{linkToGithub}</a>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'>{linkToWorklog}</a>
+          <div className="developer-container__links">
+            <a className="developer-container__link" href="https://github.com/MaxDeMaW" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+          </div>
         </div>
         <div className="developer-container">
           <img
@@ -97,8 +98,10 @@ const DevelopersPageBE = ({ language }) => {
             width="190"
           />
           <p className="developer-container__name">{fifthDeveloperName}</p>
-          <a className="developer-container__link" href="https://github.com/Deeamon" target="_blank" rel='noreferrer noopener'>{linkToGithub}</a>
-          <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'>{linkToWorklog}</a>
+          <div className="developer-container__links">
+            <a className="developer-container__link" href="https://github.com/Deeamon" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+          </div>
         </div>
 
       </div>
