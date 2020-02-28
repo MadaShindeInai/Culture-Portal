@@ -46,17 +46,3 @@
 .header__logo {
   font: bold 2.5rem "FuturaMediumC";
 }
-
-.developers-title {
-  font: bold 2rem "FuturaMediumC";
-  letter-spacing: 1px;
-}
-
-.developer-container__link {
-  font: bold 1.2rem "FuturaMediumC";
-  color: #17a2b8;
-  &:hover {
-    font: bold 1.3rem "FuturaMediumC";
-    color: darken(#17a2b8, 10%);
-  }
-}
