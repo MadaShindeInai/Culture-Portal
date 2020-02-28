@@ -25,16 +25,16 @@ const SearchPanel = ({ language, setInputValue, inputValue }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-        <div className="input-group-append">
-      <button type="button"
-      className="btn main__search-clear"
-        onClick={() => setInputValue('')}
-      >{buttonText}</button>
+      <div className="input-group-append">
+        <button type="button"
+          className="main__search-clear-btn"
+          onClick={() => setInputValue('')}
+        >{buttonText}</button>
       </div>
 
     </div>
 
-    
+
   );
 };
 

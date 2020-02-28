@@ -10,15 +10,15 @@ const AuthorsList = ({ language, architects }) => {
         const url = `/authors/${person.path}`;
         return <li
           key={person.id}
-        ><Link to={url} 
-        className='architects-list__item'
+        ><Link to={url}
+          className='architects-list__item'
         >{language === 'RU'
           ? person.nameRU
           : language === 'EN'
             ? person.nameEN
             : person.nameBY
             }
-            
+            <p className="decor"><span className="deg1" /><span className="deg2" /><span className="deg3" /></p>
           </Link></li>
       })}
 
