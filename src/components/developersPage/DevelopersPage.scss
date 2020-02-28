@@ -23,18 +23,22 @@
   width: 220px;
   height: 400px;
   margin: 20px 1rem;
-  border: 1px solid #1098ad;
   border-radius: 10px;
 }
 .developer-container__name {
   font: bold 1.5rem "FuturaMediumC";
   color: rgba(0, 0, 0, 0.85);
 }
+.developer-container__photo {
+  border-radius: 50%;
+}
 .developer-container__link {
   font: bold 1.2rem "FuturaMediumC";
   color: #17a2b8;
   &:hover {
-    font: bold 1.3rem "FuturaMediumC";
+    // font: bold 1.3rem "FuturaMediumC";
     color: darken(#17a2b8, 10%);
+    cursor: pointer;
+    transition: all 300ms ease;
   }
 }

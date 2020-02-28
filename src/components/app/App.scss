@@ -33,5 +33,6 @@ li {
   &:hover {
     color: white;
     background-color: #5bb8c7;
+    transition: all 300ms ease;
   }
 }
