@@ -4,6 +4,7 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.0.0",
     "antd": "^3.26.12",
     "bootstrap": "^4.4.1",
     "eslint-config-airbnb": "^18.0.1",
