@@ -3,8 +3,14 @@ import './AuthorOfTheDay.scss';
 import { Link } from 'react-router-dom';
 import Architects from '../../utils/architectsData';
 
-const AuthorOfTheDayRU = ({ language, dayOfTheWeek }) => {
-  const currentAuthor = Architects[dayOfTheWeek];
+const AuthorOfTheDayRU = ({ language }) => {
+  const dayOfYear = Math.floor((Date.now() - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
+  const maxRange = Architects.length;
+  const numberAuthorOfTheDay = (dayOfYear > maxRange)
+    ? (dayOfYear - (Math.floor(dayOfYear / maxRange) * maxRange))
+    : dayOfYear;
+
+  const currentAuthor = Architects[numberAuthorOfTheDay];
 
   let name;
   let shortBiography;
@@ -38,7 +44,9 @@ const AuthorOfTheDayRU = ({ language, dayOfTheWeek }) => {
             <p>{name}</p>
             <p>{currentAuthor.date}</p>
             <p className="author-of-the-day__biography">{shortBiography}</p>
-            <Link className="author-of-the-day__link" to={linkToAuthorPage}>{linkToAuthorPageText}</Link>
+            <Link className="author-of-the-day__link" to={linkToAuthorPage}>
+              {linkToAuthorPageText}
+            </Link>
           </div>
         </div>
 

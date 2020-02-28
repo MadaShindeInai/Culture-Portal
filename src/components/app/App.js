@@ -16,15 +16,13 @@ import './App.scss';
 
 function App() {
   const [language, setLanguage] = useState('RU');
-  const [dayOfTheWeek, setDayOfTheWeek] = useState(new Date().getDay() + 1);
-
 
   return (
     <div className="wrapper">
       <Router>
         <Header language={language} setLanguage={setLanguage} />
         <main className="main">
-          <Route path='/' render={() => <MainPage language={language} dayOfTheWeek={dayOfTheWeek} />} exact />
+          <Route path='/' render={() => <MainPage language={language} />} exact />
           <Route path='/authors' render={() => <AuthorsListPage language={language} />} exact />
           <Route path='/authors/:id' render={({ match }) => {
             const { id } = match.params;
