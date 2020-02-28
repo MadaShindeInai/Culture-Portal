@@ -20,8 +20,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 25px;
-  border-top: 1px solid #1098ad;
-  border-bottom: 1px solid #1098ad;
+  border-top: 1px solid #17a2b8;
+  border-bottom: 1px solid #17a2b8;
 }
 .header__item {
   display: flex;
@@ -29,11 +29,17 @@
   align-items: center;
   width: 200px;
   height: 40px;
-  font: normal 1.3rem "FuturaMediumC";
+  font: normal 1.4rem "FuturaMediumC";
   cursor: default;
   @media screen and (max-width: 460px) {
     width: 90%;
     height: 30px;
+  }
+  a {
+    color: #17a2b8;
+    &:hover {
+      color: darken(#17a2b8, 10%);
+    }
   }
 }
 
@@ -41,3 +47,16 @@
   font: bold 2.5rem "FuturaMediumC";
 }
 
+.developers-title {
+  font: bold 2rem "FuturaMediumC";
+  letter-spacing: 1px;
+}
+
+.developer-container__link {
+  font: bold 1.2rem "FuturaMediumC";
+  color: #17a2b8;
+  &:hover {
+    font: bold 1.3rem "FuturaMediumC";
+    color: darken(#17a2b8, 10%);
+  }
+}
