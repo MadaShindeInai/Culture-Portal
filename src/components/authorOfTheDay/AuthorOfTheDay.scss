@@ -1,11 +1,15 @@
 .author-of-the-day {
   margin: 25px 0;
-  border-top: 1px solid #1098ad;;
+  border-top: 1px solid #1098ad;
 }
 .author-of-the-day__wrapper {
   margin: 25px 0;
   padding: 3rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../assets/images/authour-of-the-day-bg.jpg);
+  background: linear-gradient(
+  rgba(255, 255, 255, 0.6),
+  rgba(255, 255, 255, 0.6)
+  ),
+  url(../../assets/images/authour-of-the-day-bg.jpg);
   background-size: cover;
 }
 .author-of-the-day__content {
@@ -17,6 +21,7 @@
   margin-bottom: 2rem;
   font: bold 3rem "FuturaMediumC";
   text-align: center;
+  color: #343a40;
 }
 .author-of-the-day__description {
   margin-left: 2rem;
