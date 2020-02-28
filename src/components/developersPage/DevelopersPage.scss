@@ -1,4 +1,7 @@
 .developers {
+  margin-top: 45px;
+}
+.developers__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -8,7 +11,10 @@
     justify-content: center;
   }
 }
-
+.developers__title {
+  font: bold 2rem "FuturaMediumC";
+  letter-spacing: 1px;
+}
 .developer-container {
   display: flex;
   flex-direction: column;
@@ -20,8 +26,15 @@
   border: 1px solid #1098ad;
   border-radius: 10px;
 }
-
 .developer-container__name {
   font: bold 1.5rem "FuturaMediumC";
   color: rgba(0, 0, 0, 0.85);
+}
+.developer-container__link {
+  font: bold 1.2rem "FuturaMediumC";
+  color: #17a2b8;
+  &:hover {
+    font: bold 1.3rem "FuturaMediumC";
+    color: darken(#17a2b8, 10%);
+  }
 }

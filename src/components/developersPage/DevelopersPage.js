@@ -42,9 +42,9 @@ const DevelopersPageBE = ({ language }) => {
     linkToWorklog = 'Спасылка на Worklog';
   }
   return (
-    <div>
-      <h2 className="developers-title">{titleText}</h2>
-      <div className="developers">
+    <div className="developers">
+      <h2 className="developers__title">{titleText}</h2>
+      <div className="developers__block">
         <div className="developer-container">
           <img
             src={PhotoDaria}
