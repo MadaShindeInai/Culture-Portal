@@ -1,8 +1,14 @@
+.architects-list {
+  margin-top: 50px;
+}
 .architects-list__item {
   padding: 10px;
-  font: bold 1.5rem "FuturaMediumC";
+  font: normal 1.7rem "FuturaMediumC";
   color: #17a2b8;
   &:hover {
     color: darken(#17a2b8, 10%);
+  }
+  @media screen and (max-width: 460px) {
+    font: normal 1.3rem "FuturaMediumC";
   }
 }

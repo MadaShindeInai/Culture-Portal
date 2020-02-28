@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Logo from '../../assets/images/logo.png';
 
 const Header = ({ language, setLanguage }) => {
   let appTitleText;
@@ -49,7 +50,15 @@ const Header = ({ language, setLanguage }) => {
   return (
     <header className="header">
       <div className="header__container">
-        <h1 className="header__logo">{appTitleText}</h1>
+        <div className="header-logo">
+          <img
+            src={Logo}
+            className="header-logo__image"
+            alt="Logo"
+            width="80"
+          />
+          <h1 className="header-logo__text">{appTitleText}</h1>
+        </div>
         <Dropdown>
           <Dropdown.Toggle variant="info" id="dropdown-basic">
             {changeLanguage}
