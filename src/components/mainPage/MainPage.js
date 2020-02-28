@@ -3,12 +3,12 @@ import AppDescription from '../appDescription';
 import AuthorOfTheDay from '../authorOfTheDay'
 import './MainPage.scss';
 
-const MainPage = ({ language, dayOfTheWeek }) => {
+const MainPage = ({ language }) => {
 
   return (
     <main>
       <AppDescription language={language} />
-      <AuthorOfTheDay language={language} dayOfTheWeek={dayOfTheWeek} />
+      <AuthorOfTheDay language={language} />
     </main>
   )
 

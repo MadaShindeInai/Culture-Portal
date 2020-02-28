@@ -1,11 +1,12 @@
 .main__authors {
+  min-height: 720px;
   padding: 20px 10px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url(../../assets/images/bgi-header.jpg);
-  background-size: cover;
-  font-family: "FuturaMediumC";
   font-size: 120%;
+  font-family: "FuturaMediumC";
+  background: linear-gradient(
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
+  ),
+  url(../../assets/images/bgi-header.jpg);
+  background-size: cover;
 }
