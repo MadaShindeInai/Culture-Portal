@@ -1,5 +1,8 @@
 .architects-list__item {
   padding: 10px;
   font: bold 1.5rem "FuturaMediumC";
-  color: black;
+  color: #17a2b8;
+  &:hover {
+    color: darken(#17a2b8, 10%);
+  }
 }
