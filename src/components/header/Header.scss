@@ -14,7 +14,9 @@
     font: normal 1.1rem "FuturaMediumC";
   }
 }
+
 .header-logo {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +56,7 @@
     }
   }
 }
+.header-logo__text span,
 .header-logo__text {
   font: bold 2.4rem "FuturaMediumC";
   color: #343a40;
@@ -68,5 +71,50 @@
   margin-right: 20px;
   @media screen and (max-width: 768px) {
     width: 60px;
+  }
+}
+
+.header-logo__text span {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 0;
+  text-shadow: 0 0 80px rgba(172, 113, 113, 0.5);
+  background: url(../../assets/images/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: aitf 80s linear infinite;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.header-logo__text {
+  position: absolute;
+  left: 100%;
+  display: inline-block;
+  width: 40em;
+}
+
+.header-logo__text {
+  @media screen and (max-width: 600px) {
+    top: 64px;
+    left: -125%;
+  }
+  @media screen and (max-width: 345px) {
+    left: -105%;
+  }
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.dropdown {
+  @media screen and (max-width: 600px) {
+    margin-top: 45px;
   }
 }
