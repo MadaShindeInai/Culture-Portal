@@ -19,14 +19,9 @@ const StyleGuide = ({ language }) => {
       <span></span>
       <span></span>
       <span></span>
-      Neon Button
+      Click to Button
     </button>
     </div>
-    // <div>
-    //   <span>{buttonColorText}</span>
-    //   <span>{buttonColorText}</span>
-    //   <span>{buttonColorText}</span>
-    // </div>
   )
 }
 
