@@ -56,6 +56,9 @@ const StyleGuide = ({ language }) => {
         {used}: React-Bootstrap
       </div>
       <div className='style-font'>
+        {used}: Ant Design
+      </div>
+      <div className='style-font'>
         {used}: React-Leaflet
       </div>
       <div className='style-font'>
