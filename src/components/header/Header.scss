@@ -91,16 +91,17 @@
   position: absolute;
   left: 100%;
   display: inline-block;
-  width: 40em;
-}
+  width: 550px;
 
-.header-logo__text {
   @media screen and (max-width: 600px) {
     top: 64px;
     left: -125%;
+    width: 300px;
   }
   @media screen and (max-width: 345px) {
-    left: -105%;
+    left: -65%;
+    width: 174px;
+    text-align: center;
   }
 }
 
@@ -116,5 +117,9 @@
 .dropdown {
   @media screen and (max-width: 600px) {
     margin-top: 45px;
+  }
+
+  @media screen and (max-width: 345px) {
+    margin-top: 70px;
   }
 }
