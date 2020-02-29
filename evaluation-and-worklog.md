@@ -1,3 +1,13 @@
+# CodeJam-Culture-Portal
+
+## Task
+
+https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
+
+## Link to the app
+
+culture-portal-team1.netlify.com
+
 ## Evaluation: ( 50 + 140 + 65 = 255 )
 
 Mark will be the same for all team members based on the result of presentation.
@@ -66,6 +76,7 @@ _dariavv (Darya Sidarovich)_
 | 1h         | refactoring code in architects list |
 | 2h         | add icons to the project and styles |
 | 4h         | fix styles and add adaptive         |
+| 4h         | final fixing and refactoring code   |
 
 _Deeamon (Marina Sugutova)_
 
@@ -100,4 +111,4 @@ _Nastiya (nastiya N)_
 | 1h         | page stylization Styleguide                                          |
 | 1h         | fix bag                                                              |
 
-## total: 71h
+## total: 75h
