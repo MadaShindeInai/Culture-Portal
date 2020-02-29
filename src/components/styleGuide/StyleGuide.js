@@ -40,16 +40,6 @@ const StyleGuide = ({ language }) => {
         </button>
       </div>
 
-      <div className='style-btn'>
-        <button type="button" className='style-btn_neon'>
-          <span className='span-neon' />
-          <span className='span-neon' />
-          <span className='span-neon' />
-          <span className='span-neon' />
-          {buttonColorText}
-        </button>
-      </div>
-
       <div className='style-font'>
         {fontText}: Futura MediumC
       </div>
