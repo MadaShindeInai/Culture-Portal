@@ -4,13 +4,16 @@ import './StyleGuide.scss';
 
 const StyleGuide = ({ language }) => {
   let buttonColorText;
+  let fontText;
   if (language === 'RU') {
     buttonColorText = 'Кликни по кнопке';
+    fontText = 'Использовался шрифт'
   } else if (language === 'EN') {
     buttonColorText = 'Click to Button';
+    fontText = 'Our font - family style';
   } else if (language === 'BE') {
-    buttonColorText = 'Васiль';
-
+    buttonColorText = 'Клікні па кнопцы';
+    fontText = 'Выкарыстоўваўся шрыфт';
   }
   return (
     <div className='style-container'>
@@ -32,6 +35,10 @@ const StyleGuide = ({ language }) => {
           <span></span>
           {buttonColorText}
         </button>
+      </div>
+
+      <div className='style-font'>
+        {fontText}: Futura MediumC
       </div>
     </div>
   )

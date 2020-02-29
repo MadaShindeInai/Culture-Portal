@@ -18,11 +18,12 @@ background: linear-gradient(45deg, #ffffff, #10100e);
     margin-top: 138px;
     font-family: "FuturaMediumC";
     font-size: 20px;
+    color: $neon;
 }
 
 button {
     position: relative;
-    color: $neon;
+    
     text-transform: uppercase;
     background-color: transparent;
     font-size: 100px;
@@ -87,4 +88,8 @@ button {
       height: 100%;
       background: linear-gradient(0, transparent, $neon);
     }
+  }
+
+  .style-font {
+      margin-top: 200px;
   }
