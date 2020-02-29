@@ -20,7 +20,7 @@ const AuthorOfTheDayRU = ({ language }) => {
   if (language === 'RU') {
     name = currentAuthor.nameRU;
     shortBiography = currentAuthor.descriptionRU;
-    authorOfTheDayTitle = 'Архитектор Дня';
+    authorOfTheDayTitle = 'Архитектор дня';
     linkToAuthorPageText = 'Перейти на страницу автора';
   } else if (language === 'EN') {
     name = currentAuthor.nameEN;
@@ -35,8 +35,8 @@ const AuthorOfTheDayRU = ({ language }) => {
   }
   return (
     <div className="author-of-the-day">
-      <div className="author-of-the-day__wrapper">
-        <h2 className="author-of-the-day__title"><svg viewBox="0 0 600 50">
+      <div className="author-of-the-day__wrapper parallax">
+        <h2 className="author-of-the-day__title"><svg viewBox="0 0 600 90">
           <symbol id="s-text">
             <text textAnchor="middle"
               x="50%"

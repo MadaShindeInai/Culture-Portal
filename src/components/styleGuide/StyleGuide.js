@@ -32,20 +32,20 @@ const StyleGuide = ({ language }) => {
     <div className='style-container'>
       <div className='style-btn'>
         <button className='style-btn_neon'>
-          <span class='span-neon'></span>
-          <span class='span-neon'></span>
-          <span class='span-neon'></span>
-          <span class='span-neon'></span>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
           {buttonColorText}
         </button>
       </div>
 
       <div className='style-btn'>
-      <button className='style-btn_neon'>
-      <span class='span-neon'></span>
-      <span class='span-neon'></span>
-      <span class='span-neon'></span>
-      <span class='span-neon'></span>
+        <button className='style-btn_neon'>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
+          <span className='span-neon'></span>
           {buttonColorText}
         </button>
       </div>
