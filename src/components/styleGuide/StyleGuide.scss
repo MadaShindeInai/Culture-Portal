@@ -5,17 +5,22 @@ $neon: #1bffff;
 // $neon: #d4145a;
 
 .style-container {
-margin: 0;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: center;
 min-height: 100vh;
 background: linear-gradient(45deg, #ffffff, #10100e);
 }
 
+.style-btn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 138px;
+    font-family: "FuturaMediumC";
+    font-size: 20px;
+}
+
 button {
-    font-family: 'Gochi Hand';
     position: relative;
     color: $neon;
     text-transform: uppercase;
