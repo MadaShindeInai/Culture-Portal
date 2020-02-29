@@ -28,20 +28,20 @@ const StyleGuide = ({ language }) => {
     <div className='style-container'>
       <div className='style-btn'>
         <button className='style-btn_neon'>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class='span-neon'></span>
+          <span class='span-neon'></span>
+          <span class='span-neon'></span>
+          <span class='span-neon'></span>
           {buttonColorText}
         </button>
       </div>
 
       <div className='style-btn'>
       <button className='style-btn_neon'>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+      <span class='span-neon'></span>
+      <span class='span-neon'></span>
+      <span class='span-neon'></span>
+      <span class='span-neon'></span>
           {buttonColorText}
         </button>
       </div>
@@ -55,7 +55,7 @@ const StyleGuide = ({ language }) => {
       </div>
 
       <div className='style-font'>
-        {colorText}: 25px;
+        {margin}: 25px;
       </div>
     </div>
   )

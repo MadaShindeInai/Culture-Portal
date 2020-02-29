@@ -39,7 +39,7 @@ background: linear-gradient(45deg, #ffffff, #10100e);
       box-shadow: 0 0 10px $neon,
                   0 0 40px $neon,
                   0 0 80px $neon;
-      span {
+        .span-neon  {
         &:nth-child(1) { left: 100%; }
         &:nth-child(2) { top: 100%; }
         &:nth-child(3) { right: 100%; }
@@ -48,7 +48,7 @@ background: linear-gradient(45deg, #ffffff, #10100e);
     }
   }
   
-  span {
+  .span-neon {
     display: block;
     position: absolute;
     transition: .6s ease;
@@ -91,13 +91,13 @@ background: linear-gradient(45deg, #ffffff, #10100e);
   .style-font {
       margin-top: 200px;
       font-family: "FuturaMediumC";
-      font-size: 27px;
+      font-size: 35px;
       color: $neon;
+      transition: .6s ease;
+
     }
 
-  .style-font {
-      margin-top: 200px;
-      font-family: "FuturaMediumC";
-      font-size: 27px;
-      color: $neon;
+  .style-font:hover {
+    transition-delay: .25s;
+    font-size: 45px;
     }
