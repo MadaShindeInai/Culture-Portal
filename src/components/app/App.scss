@@ -14,7 +14,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 670px;
+  min-height: 650px;
   text-align: center;
 }
 
@@ -48,8 +48,7 @@ $time-4: 600s;
 @function particles($max) {
   $val: 0 0 $color-particle;
   @for $i from 1 through $max {
-    $val: #{$val},
-    random($spacing)+px random($spacing)+px $color-particle;
+    $val: #{$val}, random($spacing) + px random($spacing) + px $color-particle;
   }
   @return $val;
 }
@@ -74,14 +73,14 @@ $time-4: 600s;
   height: 1px;
   animation: animParticle $time-1 linear infinite;
 
-  @include particles(600);
+@include particles(600);
 }
 
 .particle-1:after {
   width: 1px;
   height: 1px;
 
-  @include particles(600);
+@include particles(600);
 }
 
 .particle-2 {
@@ -89,14 +88,14 @@ $time-4: 600s;
   height: 2px;
   animation: animParticle $time-2 linear infinite;
 
-  @include particles(200);
+@include particles(200);
 }
 
 .particle-2:after {
   width: 2px;
   height: 2px;
 
-  @include particles(200);
+@include particles(200);
 }
 
 .particle-3 {
@@ -104,14 +103,14 @@ $time-4: 600s;
   height: 3px;
   animation: animParticle $time-3 linear infinite;
 
-  @include particles(100);
+@include particles(100);
 }
 
 .particle-3:after {
   width: 3px;
   height: 3px;
 
-  @include particles(100);
+@include particles(100);
 }
 
 .particle-4 {
@@ -119,14 +118,14 @@ $time-4: 600s;
   height: 1px;
   animation: animParticle $time-4 linear infinite;
 
-  @include particles(400);
+@include particles(400);
 }
 
 .particle-4:after {
   width: 1px;
   height: 1px;
 
-  @include particles(400);
+@include particles(400);
 }
 
 @keyframes animParticle {
