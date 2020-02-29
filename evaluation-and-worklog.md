@@ -2,11 +2,11 @@
 
 ## Task
 
-https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
+[https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md)
 
 ## Link to the app
 
-culture-portal-team1.netlify.com
+[https://culture-portal-team1.netlify.com/](https://culture-portal-team1.netlify.com/)
 
 ## Evaluation: ( 50 + 140 + 65 = 255 )
 
