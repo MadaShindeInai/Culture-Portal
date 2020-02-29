@@ -57,7 +57,7 @@ const Header = ({ language, setLanguage }) => {
             alt="Logo"
             width="80"
           />
-          <h1 className="header-logo__text">{appTitleText}</h1>
+          <h1 className="header-logo__text"><span>{appTitleText}</span></h1>
         </div>
         <Dropdown>
           <Dropdown.Toggle variant="info" id="dropdown-basic">
