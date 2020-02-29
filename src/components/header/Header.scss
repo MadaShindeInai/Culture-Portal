@@ -93,6 +93,12 @@
   display: inline-block;
   width: 550px;
 
+  @media screen and (max-width: 660px) {
+    left: 100%;
+    display: inline-block;
+    width: 440px;
+  }
+
   @media screen and (max-width: 600px) {
     top: 64px;
     left: -125%;
