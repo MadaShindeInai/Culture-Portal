@@ -13,10 +13,8 @@ const AuthorsListPage = ({ language }) => {
   } else {
     searchKey = `name${language}`
   }
-
   const [inputValue, setInputValue] = useState('');
-  // eslint-disable-next-line no-unused-vars
-  const [architects, setArchitects] = useState(Architects);
+  const architects = Architects;
   const search = () => {
     if (inputValue.length === 0) {
       return architects;
