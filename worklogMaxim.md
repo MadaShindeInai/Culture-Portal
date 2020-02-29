@@ -8,4 +8,5 @@ _Maxim (Maxim Demenkov)_
 | 1h         | search by name in architects block                 |
 | 3h         | style architects page                              |
 | 1h         | header animation                                   |
-| 3h         | small fixes                                        |
+| 1h         | parallax animation                                 |
+| 4h         | small fixes                                        |
