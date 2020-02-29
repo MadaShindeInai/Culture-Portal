@@ -4,7 +4,7 @@ $neon: #1bffff;
 
 .style-container {
 min-height: 100vh;
-background: linear-gradient(45deg, #ffffff, #10100e);
+background: linear-gradient(45deg, #e8e1e1, #10100e);
 }
 
 .style-btn {
@@ -94,6 +94,10 @@ background: linear-gradient(45deg, #ffffff, #10100e);
       font-size: 35px;
       color: $neon;
       transition: .6s ease;
+
+    }
+  .style-font:last-of-type {
+      color: $neon;
 
     }
 
