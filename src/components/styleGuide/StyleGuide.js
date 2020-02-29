@@ -13,11 +13,20 @@ const StyleGuide = ({ language }) => {
 
   }
   return (
-    <div>
-      <span>{buttonColorText}</span>
-      <span>{buttonColorText}</span>
-      <span>{buttonColorText}</span>
+    <div className='style-container'>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Neon Button
+    </button>
     </div>
+    // <div>
+    //   <span>{buttonColorText}</span>
+    //   <span>{buttonColorText}</span>
+    //   <span>{buttonColorText}</span>
+    // </div>
   )
 }
 
