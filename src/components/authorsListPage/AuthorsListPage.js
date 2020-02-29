@@ -15,6 +15,7 @@ const AuthorsListPage = ({ language }) => {
   }
 
   const [inputValue, setInputValue] = useState('');
+  // eslint-disable-next-line no-unused-vars
   const [architects, setArchitects] = useState(Architects);
   const search = () => {
     if (inputValue.length === 0) {
