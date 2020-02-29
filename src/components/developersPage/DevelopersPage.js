@@ -74,7 +74,7 @@ const DevelopersPageBE = ({ language }) => {
           <p className="developer-container__name">{firstDeveloperName}</p>
           <div className="developer-container__links">
             <a className="developer-container__link" href="https://github.com/dariavv" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
-            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/dev/worklogDarya.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
           </div>
         </div>
         <div className="developer-container">
@@ -113,7 +113,7 @@ const DevelopersPageBE = ({ language }) => {
           <p className="developer-container__name">{forthDeveloperName}</p>
           <div className="developer-container__links">
             <a className="developer-container__link" href="https://github.com/MaxDeMaW" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
-            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/dev/worklogMaxim.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
           </div>
         </div>
         <div className="developer-container">
@@ -126,7 +126,7 @@ const DevelopersPageBE = ({ language }) => {
           <p className="developer-container__name">{fifthDeveloperName}</p>
           <div className="developer-container__links">
             <a className="developer-container__link" href="https://github.com/Deeamon" target="_blank" rel='noreferrer noopener'><GithubOutlined /></a>
-            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/master/README.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
+            <a className="developer-container__link" href="https://github.com/MadaShindeInai/Culture-Portal/blob/dev/worklogMarina.md" target="_blank" rel='noreferrer noopener'><FileWordOutlined /></a>
           </div>
         </div>
 
