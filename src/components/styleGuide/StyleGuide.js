@@ -61,9 +61,6 @@ const StyleGuide = ({ language }) => {
       <div className='style-font'>
         {used}: React-Leaflet
       </div>
-      <div className='style-font'>
-        {used}: Google Map
-      </div>
     </div>
   )
 }
