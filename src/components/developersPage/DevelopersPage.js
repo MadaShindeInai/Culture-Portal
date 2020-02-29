@@ -36,7 +36,33 @@ const DevelopersPageBE = ({ language }) => {
   }
   return (
     <div className="developers">
-      <h2 className="developers__title">{titleText}</h2>
+      <h2 className="developers__title"><svg viewBox="0 0 600 50">
+        <symbol id="s-text">
+          <text textAnchor="middle"
+            x="50%"
+            y="68%"
+            className="text--line2"
+          >
+            {titleText}
+          </text>
+
+        </symbol>
+
+        <g className="g-ants">
+          <use xlinkHref="#s-text"
+            className="text-copy" />
+          <use xlinkHref="#s-text"
+            className="text-copy" />
+          <use xlinkHref="#s-text"
+            className="text-copy" />
+          <use xlinkHref="#s-text"
+            className="text-copy" />
+          <use xlinkHref="#s-text"
+            className="text-copy" />
+        </g>
+
+
+      </svg></h2>
       <div className="developers__block">
         <div className="developer-container">
           <img
