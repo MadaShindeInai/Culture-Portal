@@ -1,0 +1,171 @@
+.author-of-the-day {
+  margin: 25px 0;
+  border-top: 1px solid #1098ad;
+}
+.author-of-the-day__wrapper {
+  margin: 25px 0;
+  padding: 3rem;
+  padding-bottom: 120px;
+  background: linear-gradient(
+  rgba(255, 255, 255, 0.6),
+  rgba(255, 255, 255, 0.6)
+  ),
+  url(../../assets/images/authour-of-the-day-bg.jpg);
+  background-size: cover;
+}
+.author-of-the-day__content {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+.author-of-the-day__title {
+  display: block;
+  margin-bottom: 2rem;
+  font: normal 2.5rem "FuturaMediumC";
+  text-align: center;
+  color: #343a40;
+}
+.author-of-the-day__description {
+  margin-left: 2rem;
+  font: bold 2rem "FuturaMediumC";
+}
+.author-of-the-day__biography {
+  margin-bottom: 2rem;
+}
+
+.author-of-the-day__link {
+  font-style: italic;
+  text-align: right;
+  color: #17a2b8;
+  &:hover {
+    color: darken(#17a2b8, 15%);
+  }
+}
+p.decor {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+p.decor:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: 100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #1098ad;
+}
+p.decor:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: -100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #1098ad;
+}
+p.decor span.deg1 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: -30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+p.decor span.deg2 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+p.decor span.deg3 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #1098ad;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+@media (max-width: 800px) {
+  .author-of-the-day__title {
+    font: bold 3em "FuturaMediumC";
+  }
+  .author-of-the-day__description {
+    font: bold 1.5rem "FuturaMediumC";
+  }
+}
+@media (max-width: 650px) {
+  .author-of-the-day__content {
+    flex-direction: column;
+  }
+  .author-of-the-day__description {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .author-of-the-day__title {
+    font: bold 4em "FuturaMediumC";
+  }
+}
+
+$colors: #1098ad, #1098ad, #1098ad, #1098ad, #1098ad;
+
+.text--line {
+  font-size: 0.5em;
+}
+
+$max: 5;
+$stroke-step: 25%;
+.text-copy {
+  animation: stroke-offset 9s infinite reverse;
+
+  fill: rgba(0, 0, 0, 0.25);
+  stroke: white;
+  stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
+  stroke-width: 2px;
+
+  @for $item from 1 through $max {
+    $stroke-color: nth($colors, $item);
+
+    &:nth-child(#{$item}) {
+      stroke: $stroke-color;
+      stroke-dashoffset: $stroke-step * $item;
+    }
+  }
+}
+
+@keyframes stroke-offset {
+  10% {
+    stroke-dasharray: 0 $stroke-step * $max * 2.5;
+    stroke-dashoffset: $stroke-step * $max;
+  }
+}
